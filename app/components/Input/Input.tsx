@@ -1,9 +1,13 @@
 import React from 'react';
-import {View} from 'react-native';
+import {KeyboardAvoidingView, TextInput, View} from 'react-native';
 import {styles} from './styles';
 
 const Input = () => {
-  return <View></View>;
+  return (
+    <KeyboardAvoidingView style={styles.container}>
+      <TextInput style={styles.input} />
+    </KeyboardAvoidingView>
+  );
 };
 
 export default Input;

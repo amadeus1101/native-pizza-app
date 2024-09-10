@@ -1,10 +1,12 @@
 import {StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
+  slider: {},
   container: {},
   image: {},
+  content: {},
   title: {},
-  price: {},
+  description: {},
   button: {},
   buttonText: {},
 });

@@ -1,9 +1,19 @@
 import React from 'react';
-import {View} from 'react-native';
+import {FlatList, ScrollView, Text, View} from 'react-native';
 import {styles} from './styles';
 
-const BuyButton = () => {
-  return <View></View>;
+const Categories = () => {
+  return (
+    <FlatList
+      style={styles.list}
+      data={[]}
+      renderItem={({item, index}) => (
+        <View style={styles.container} key={index}>
+          <Text style={styles.title}>Category1</Text>
+        </View>
+      )}
+    />
+  );
 };
 
-export default BuyButton;
+export default Categories;
